@@ -8,8 +8,9 @@ function App() {
     <>
       <Navbar navTitle="JunaidDev" about="Movie Showing App" />
       <div className="mainCards">
-        {movies.map((element) => (
+        {movies.map((element , index) => (
           <Cards
+          key={index}
             title={element.Title}
             year={element.Year}
             img={element.Poster}
